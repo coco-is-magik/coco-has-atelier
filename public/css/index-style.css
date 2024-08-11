@@ -1,0 +1,375 @@
+/* Reset default margins and padding */
+body, h1, h2, p, div, header, footer, aside, main {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Header Centering */
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    margin: 0; /* Reset margins if needed */
+    padding: 10px 0; /* Optional padding for spacing */
+}
+
+/* Set body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Title Bar */
+.title-bar {
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid black;
+    margin: 4px auto;
+    max-width: 1200px; /* Set a max-width for larger screens */
+}
+
+/* Main container */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    height: calc(100vh - 160px); /* Full height minus title and footer */
+}
+
+/* Collapsible content */
+.collapsible {
+    margin: 20px 0;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.collapsible-header {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.collapsible-content {
+    padding: 10px;
+    display: none; /* Content is hidden by default */
+    background-color: #ffffff;
+}
+
+.collapsible-header h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.collapsible-header .arrow {
+    font-size: 18px;
+    transition: transform 0.3s ease;
+}
+
+.collapsible-header.active .arrow {
+    transform: rotate(90deg); /* Rotate arrow when section is open */
+}
+
+.collapsible-content ul {
+    list-style-type: disc; /* Default bullet style */
+    margin: 10px 0;
+    padding-left: 20px; /* Indent the list */
+}
+
+.collapsible-content li {
+    margin-bottom: 5px; /* Space between list items */
+}
+
+.collapsible-content ol {
+    list-style-type: decimal; /* Default numbered style */
+    margin: 10px 0;
+    padding-left: 20px; /* Indent the list */
+}
+
+.collapsible-content li {
+    margin-bottom: 5px; /* Space between list items */
+}
+
+/* Divider */
+.divider {
+    border: 0; /* Remove the default border */
+    height: 2px; /* Set the height of the divider */
+    background-color: black; /* Set the color of the divider */
+    margin: 20px 0; /* Add space around the divider */
+    width: 80%; /* Optional: Set the width of the divider */
+    margin-left: auto; /* Center the divider */
+    margin-right: auto; /* Center the divider */
+}
+
+.news-divider {
+    border: 0; /* Remove the default border */
+    height: 2px; /* Set the height of the divider */
+    background-color: rgb(75, 75, 75); /* Set the color of the divider */
+    width: 30%; /* Optional: Set the width of the divider */
+    margin-left: 0;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 19%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 10px 10px;
+}
+
+.sidebar .box {
+    overflow-y: auto; /* Enable vertical scrolling */
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+    height: 50%;
+}
+
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 100%;
+}
+
+.grid-button {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: none;
+    border: 2px solid black;
+    transition: transform 0.3s ease;
+}
+
+.grid-button:hover {
+    transform: scale(1.1); /* Slightly enlarge the button on hover */
+}
+
+/* CBox Styles */
+#c_widget {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 5px 10px;
+    border: 1px solid #000;
+    background-color: #f0f0f0;
+}
+
+/* Flexbox layout for Name and Website */
+#c_nameWebsiteWrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0px;
+}
+
+.c-labelInputPair {
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+}
+
+.c-label {
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 1px;
+}
+
+.c-input, .c-textInput {
+    width: 100%;
+    padding: 1px;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #000;
+    background-color: #fff;
+}
+
+.c-input:focus, .c-textInput:focus {
+    border-color: #000;
+    outline: none;
+}
+
+/* Flexbox layout for Message and Submit button */
+#c_messageSubmitWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.c-messageInput {
+    width: 70%; /* Adjust this width as needed */
+}
+
+.c-textInput {
+    resize: none; /* Prevent resizing */
+}
+
+#c_messageWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10px;
+    width: 30%; /* Adjust this width as needed */
+    justify-content: center; /* Center the content vertically */
+}
+
+#c_messageWrapper {
+    margin-top: 10px;
+}
+
+#c_submitButton {
+    padding: 5px 10px;
+    background-color: #000;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+#c_submitButton:hover {
+    background-color: #333;
+}
+
+/* Comments section */
+#c_commentsDiv {
+    margin-top: 10px;
+    border-top: 1px solid #000;
+    padding-top: 5px;
+}
+
+#c_commentsContainer {
+    max-height: 180px;
+    overflow-y: auto;
+    padding: 5px;
+    border: 1px solid #000;
+    background-color: #e0e0e0;
+}
+
+/* Styling for individual comments */
+.c-comment {
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #000;
+    background-color: #fff;
+}
+
+.c-comment h6 {
+    margin: 0;
+    font-size: 13px;
+    color: #000;
+    text-align: left;
+    margin: 0; /* Reset margins if needed */
+    padding: 2px 0; /* Optional padding for spacing */
+}
+
+.c-comment {
+    font-size: 10px;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.c-timestamp {
+    font-size: 10px;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.c-comment p {
+    margin: 0;
+    font-size: 14px;
+    color: #000;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    #c_widget {
+        padding: 5px;
+    }
+
+    #c_widgetTitle {
+        font-size: 16px;
+    }
+
+    .c-input, .c-textInput {
+        font-size: 12px;
+    }
+
+    #c_submitButton {
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    #c_commentsContainer {
+        max-height: 150px;
+    }
+}
+
+/* Center Content */
+.content {
+    width: 60%;
+    overflow-y: auto;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+/* Box Styles */
+.box {
+    border: 2px solid black;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f8f8f8;
+    box-sizing: border-box; /* Ensure padding is included in the width calculation */
+}
+
+.mainbox {
+    padding: 30px;
+    margin-bottom: 10px;
+    background-color: #f8f8f8;
+    box-sizing: border-box; /* Ensure padding is included in the width calculation */
+}
+
+.h3-site-news {
+    text-align: left; /* Aligns the text to the left */
+    margin-left: 0; /* Ensures no extra left margin */
+    padding: 2px 0; /* Optional padding for spacing */
+}
+
+/* Footer Styles */
+.footer {
+    text-align: center; /* Center the content */
+    padding: 10px;
+    border-top: 2px solid black;
+    margin-top: 10px;
+}
+
+.footer p {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Optional: adjust spacing between elements */
+}
+
+.footer-separator {
+    margin: 0 10px;
+    color: #000; /* Adjust the color of the separator if needed */
+    font-size: 18px; /* Adjust the size of the separator if needed */
+}
+
+.footer a {
+    text-decoration: none;
+    color: inherit;
+}

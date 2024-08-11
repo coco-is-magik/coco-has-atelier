@@ -7,8 +7,170 @@
     <link rel="stylesheet" href="css/index-style.css">
 </head>
 <body>
-    <h1>Hello, World!</h1>
+    <!-- Title Bar -->
+    <header class ="title-bar">
+        <h1>Coco's Atelier</h1>
+    </header>
+
+    <!-- Main Layout -->
+    <div class="container">
+        <!-- Left Sidebar -->
+        <aside class="sidebar left">
+            <div class="box">
+                <h2>My Pages</h2>
+                <div class="button-grid">
+                    <a href="javascript:void(0);" class="grid-button" data-action="go-to-blog">Read Blog</a>
+                    <a href="javascript:void(0);" class="grid-button" data-action="go-to-money">Plan Finances</a>
+                    <a href="javascript:void(0);" class="grid-button" data-action="go-to-pokemon">Pokemon Team</a>
+                    <a href="javascript:void(0);" class="grid-button" data-action="go-to-cybernews">Cybersec News</a>
+                </div>
+            </div>
+            <div class="box">
+                <h2>Toggle Features</h2>
+                <div class="button-grid">
+                    <a href="javascript:void(0);" class="grid-button" data-action="toggle-music">Music</a>
+                    <a href="javascript:void(0);" class="grid-button" data-action="toggle-anim">Animations</a>
+                    <a href="javascript:void(0);" class="grid-button" data-action="toggle-matrix">Matrix</a>
+                    <a href="javascript:void(0);" class="grid-button" data-action="toggle-gifs">Gifs</a>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content">
+            <div class="mainbox">
+                <!-- Welcome Message -->
+                <h2>Welcome to Coco's Atelier!</h2>
+                <p>This is the main content of the website. It can be any HTML, CSS, or JavaScript.</p>
+
+                <hr class="divider">
+
+                <!-- What is on this website? -->
+                <div class="collapsible-header">
+                    <!-- Collapsible header -->
+                    <h2>What is on This Website? <span class="arrow">&#9654;</span></h2>
+                </div>
+                <div class="collapsible-content">
+                    <!-- Collapsible content -->
+                    <p>Paragraph about what is currently on the website.</p>
+                    <br>
+                    <p>Paragraph about what I want to put on the website.</p>
+                </div>
+
+                <!-- A Personal Statement About the World -->
+                <div class="collapsible-header">
+                    <!-- Collapsible header -->
+                    <h2>A Personal Statement About the World <span class="arrow">&#9654;</span></h2>
+                </div>
+                <div class="collapsible-content">
+                    <!-- Collapsible content -->
+                    <p>A few paragraphs about how I see the world</p>
+                    <br>
+                    <p>A few paragraphs about how I see the world</p>
+                    <br>
+                    <p>A few paragraphs about how I see the world</p>
+                    <br>
+                    <p>A paragraph about how I think I can improve it and my philosophy for that</p>
+                </div>
+
+                <!-- Site News -->
+                <div class="collapsible-header">
+                    <!-- Collapsible header -->
+                    <h2>Site News <span class="arrow">&#9654;</span></h2>
+                </div>
+                <div class="collapsible-content">
+                    <!-- Collapsible content -->
+                    <h3 class="h3-site-news">Date of news</h3>
+                    <hr class="news-divider">
+                    <p>Brief description of the news</p>
+                </div>
+
+                <!-- TODO List -->
+                <div class="collapsible-header">
+                    <!-- Collapsible header -->
+                    <h2>TODO List <span class="arrow">&#9654;</span></h2>
+                </div>
+                <div class="collapsible-content">
+                    <!-- Collapsible content -->
+                    <ol>
+                        <li>First item in the list</li>
+                        <li>Second item in the list</li>
+                        <li>Third item in the list</li>
+                        <li>Fourth item in the list</li>
+                    </ol>
+                </div>
+
+                <!-- Collectables and Things -->
+                <div class="collapsible-header">
+                    <!-- Collapsible header -->
+                    <h2>Collectables and Things <span class="arrow">&#9654;</span></h2>
+                </div>
+                <div class="collapsible-content">
+                    <!-- Collapsible content -->
+                    <p>Put a bunch of cool buttons and things here</p>
+                </div>
+            </div>
+        </main>
+
+        <!-- Right Sidebar -->
+        <aside class="sidebar right">
+            <div class="box">
+                <h2>Cool Sites</h2>
+                <div class="button-grid">
+                    <a href="javascript:void(0);" class="grid-button" data-action="go-to-prodefch">ProDefCh</a>
+                    <a href="javascript:void(0);" class="grid-button" data-action="go-to-wapchan">Wapchan</a>
+                    <a href="javascript:void(0);" class="grid-button" data-action="go-to-invid">Invidious</a>
+                </div>
+            </div>
+            <div class="box">
+                <div id="c_widget">
+                    <div id="c_inputDiv">
+                        <form id="c_form" onsubmit="submitComment(); return false;">
+                            <div id="c_nameWebsiteWrapper" class="c-inputWrapper">
+                                <div class="c-labelInputPair">
+                                    <label class="c-label c-nameLabel" for="entryName">Name*</label>
+                                    <input class="c-input c-nameInput" name="entryName" id="entryName" type="text" maxlength="24" required>
+                                </div>
+                                <div class="c-labelInputPair">
+                                    <label class="c-label c-websiteLabel" for="entryWebsite">Website</label>
+                                    <input class="c-input c-websiteInput" name="entryWebsite" id="entryWebsite" type="url">
+                                </div>
+                            </div>
+                        
+                            <div id="c_messageSubmitWrapper" class="c-inputWrapper">
+                                <div id="c_messageWrapper">
+                                    <label class="c-label c-textLabel" for="entryMessage">Message*</label>
+                                    <div id="c_submitWrapper">
+                                        <input id="c_submitButton" name="c_submitButton" type="submit" value="Submit">
+                                    </div>
+                                </div>
+                                <div class="c-messageInput">
+                                    <textarea class="c-input c-textInput" name="entryMessage" id="entryMessage" rows="4" maxlength="500" required></textarea>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div id="c_commentsDiv">
+                        <div id="c_commentsContainer"></div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="https://github.com/coco-is-magik/coco-has-atelier" target="_blank">GitHub Repository</a>
+        <span class="footer-separator">•</span>
+        <a href="https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">
+            CC BY-SA 4.0
+            <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="">
+            <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt="">
+            <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt="">
+        </a>
+    </footer>
+
+    <!-- Load scripts -->
     <script src="js/index-script.js"></script>
-    <p xmlns:cc="http://creativecommons.org/ns#" >This work is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></a></p> 
 </body>
 </html>
