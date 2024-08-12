@@ -1,0 +1,166 @@
+/* Reset default margins and padding */
+body, h1, h2, h3, h4, h5, h6, p, div, header, footer, aside, main {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Header Centering */
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    padding: 10px 0; /* Optional padding for spacing */
+}
+
+/* Set body styles */
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Noise */
+.noise {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+    opacity: 0.2;
+}
+
+body {
+    background-color: black;
+}
+
+.h3-site-news {
+    text-align: left; /* Aligns the text to the left */
+    margin-left: 0; /* Ensures no extra left margin */
+    padding: 2px 0; /* Optional padding for spacing */
+}
+
+/* Main container */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    height: calc(100vh - 160px); /* Full height minus title and footer */
+}
+
+/* Title Bar */
+.title-bar {
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    border-bottom: 2px solid white;
+    margin: 4px auto;
+    max-width: 1200px; /* Set a max-width for larger screens */
+}
+
+/* Divider */
+.divider {
+    border: 0; /* Remove the default border */
+    height: 2px; /* Set the height of the divider */
+    background-color: black; /* Set the color of the divider */
+    margin: 20px 0; /* Add space around the divider */
+    width: 80%; /* Optional: Set the width of the divider */
+    margin-left: auto; /* Center the divider */
+    margin-right: auto; /* Center the divider */
+}
+
+/* Center Content */
+.content {
+    width: 60%;
+    overflow-y: auto;
+    background-color: #ffffff;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.mainbox {
+    padding: 30px;
+    margin-bottom: 10px;
+    background-color: #f8f8f8;
+    box-sizing: border-box; /* Ensure padding is included in the width calculation */
+}
+
+/* Box Styles */
+.box {
+    border: 2px solid black;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f8f8f8;
+    box-sizing: border-box; /* Ensure padding is included in the width calculation */
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 19%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 10px 10px;
+}
+
+.sidebar .box {
+    overflow-y: auto; /* Enable vertical scrolling */
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+    height: 50%;
+}
+
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 100%;
+}
+
+.grid-button {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: none;
+    border: 2px solid black;
+    transition: transform 0.3s ease;
+}
+
+.grid-button:hover {
+    transform: scale(1.1); /* Slightly enlarge the button on hover */
+}
+
+
+/* Footer Styles */
+.footer {
+    text-align: center; /* Center the content */
+    padding: 10px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid white;
+    margin-top: 10px;
+}
+
+.footer p {
+    display: flex;
+    gap: 10px; /* Optional: adjust spacing between elements */
+}
+
+.footer-separator {
+    margin: 0 10px;
+    font-size: 18px; /* Adjust the size of the separator if needed */
+}
+
+.footer a {
+    text-decoration: none;
+    color: inherit;
+}

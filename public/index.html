@@ -3,10 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Static Website</title>
+    <title>Coco Has Atelier</title>
+    <link rel="stylesheet" href="css/common-elements.css">
+    <link rel="stylesheet" href="css/cbox.css">
     <link rel="stylesheet" href="css/index-style.css">
 </head>
 <body>
+    <!-- Noise -->
+    <canvas class="noise"></canvas>
+
     <!-- Title Bar -->
     <header class ="title-bar">
         <h1>Coco's Atelier</h1>
@@ -19,19 +24,15 @@
             <div class="box">
                 <h2>My Pages</h2>
                 <div class="button-grid">
-                    <a href="javascript:void(0);" class="grid-button" data-action="go-to-blog">Read Blog</a>
-                    <a href="javascript:void(0);" class="grid-button" data-action="go-to-money">Plan Finances</a>
-                    <a href="javascript:void(0);" class="grid-button" data-action="go-to-pokemon">Pokemon Team</a>
-                    <a href="javascript:void(0);" class="grid-button" data-action="go-to-cybernews">Cybersec News</a>
+                    <a href="javascript:void(0);" class="grid-button" data-action="go-to-index">Main Page</a>
+                    <a href="javascript:void(0);" class="grid-button" data-action="go-to-blog">Blog Posts</a>
+                    <a href="javascript:void(0);" class="grid-button" data-action="go-to-finances">Finances</a>
                 </div>
             </div>
             <div class="box">
                 <h2>Toggle Features</h2>
                 <div class="button-grid">
                     <a href="javascript:void(0);" class="grid-button" data-action="toggle-music">Music</a>
-                    <a href="javascript:void(0);" class="grid-button" data-action="toggle-anim">Animations</a>
-                    <a href="javascript:void(0);" class="grid-button" data-action="toggle-matrix">Matrix</a>
-                    <a href="javascript:void(0);" class="grid-button" data-action="toggle-gifs">Gifs</a>
                 </div>
             </div>
         </aside>
@@ -160,6 +161,8 @@
 
     <!-- Footer -->
     <footer class="footer">
+        <a href="contact.html" target="_blank">Contact</a>
+        <span class="footer-separator">•</span>
         <a href="https://github.com/coco-is-magik/coco-has-atelier" target="_blank">GitHub Repository</a>
         <span class="footer-separator">•</span>
         <a href="https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">
@@ -172,5 +175,7 @@
 
     <!-- Load scripts -->
     <script src="js/index-script.js"></script>
+    <script src="js/comment-box.js"></script>
+    <script src="js/common-functions.js"></script>
 </body>
 </html>
