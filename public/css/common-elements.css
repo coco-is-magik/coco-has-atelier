@@ -15,7 +15,7 @@ h1, h2, h3, h4, h5, h6 {
 body {
     font-family: Arial, sans-serif;
     height: 100vh;
-    background-color: white;
+    background-color: #f8f8f8;
     overflow: hidden;
     position: relative;
 }
@@ -52,11 +52,11 @@ body {
 
 /* Title Bar */
 .title-bar {
-    width: 80%;
+    width: 50%;
     padding: 20px;
     text-align: center;
-    color: white;
-    border-bottom: 2px solid white;
+    color: #f8f8f8;
+    border-bottom: 2px solid #f8f8f8;
     margin: 4px auto;
     max-width: 1200px; /* Set a max-width for larger screens */
 }
@@ -76,7 +76,7 @@ body {
 .content {
     width: 60%;
     overflow-y: auto;
-    background-color: #ffffff;
+    background-color: #f8f8f8;
     border: 2px solid black;
     padding: 10px;
 }
@@ -109,11 +109,12 @@ body {
 }
 
 .sidebar .box {
-    overflow-y: auto; /* Enable vertical scrolling */
-    position: relative;
+    overflow: hidden;
     width: 100%;
     margin-bottom: 10px;
     height: 50%;
+    background-color: #f8f8f8;
+    box-sizing: border-box; /* Ensure padding is included in the width calculation */
 }
 
 .button-grid {
@@ -128,25 +129,47 @@ body {
     text-align: center;
     padding: 10px;
     background-color: #000000;
-    color: #ffffff;
+    color: #f8f8f8;
     text-decoration: none;
     border: 2px solid black;
     transition: transform 0.3s ease;
+    z-index: 2;
 }
 
 .grid-button:hover {
     transform: scale(1.1); /* Slightly enlarge the button on hover */
 }
 
+/* Shaking */
+.shake {
+    border: 3px solid #f8f8f8;
+    border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
+    background: #f8f8f8;
+    position: relative;
+}
+
+.shake::before {
+    content: '';
+    border: 2px solid #f8f8f8;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    border-radius: 1% 1% 2% 4% / 2% 6% 5% 4%;
+    pointer-events: none;
+}
 
 /* Footer Styles */
 .footer {
     text-align: center; /* Center the content */
     padding: 10px;
-    color: white;
+    color: #f8f8f8;
     justify-content: center;
     align-items: center;
-    border-top: 2px solid white;
+    border-top: 2px solid #f8f8f8;
     margin-top: 10px;
 }
 

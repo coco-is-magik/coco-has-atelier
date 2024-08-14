@@ -17,7 +17,7 @@
 .collapsible-header {
     padding: 10px;
     cursor: pointer;
-    background-color: #f0f0f0;
+    background-color: #f8f8f8;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,7 +26,7 @@
 .collapsible-content {
     padding: 10px;
     display: none; /* Content is hidden by default */
-    background-color: #ffffff;
+    background-color: #f8f8f8;
 }
 
 .collapsible-header h2 {

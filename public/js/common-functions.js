@@ -1,7 +1,6 @@
 /*
  * Noise generator
  */
-
 document.addEventListener('DOMContentLoaded', function () {
     const canvas = document.querySelector('.noise');
     const ctx = canvas.getContext('2d');
@@ -98,3 +97,49 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 });
+
+/*
+ * Shaking boxes
+ */
+function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function animateTremble() {
+    const elementswhite = document.getElementsByClassName('shake');
+
+    for (const element of elementswhite) {
+        const beforeElement = window.getComputedStyle(element, '::before');
+    
+        let lastTime = 0;
+        const interval = 500; // Time between trembles in milliseconds
+
+        function tremble(timestamp) {
+            if (timestamp - lastTime >= interval) {
+                // Generate random values for the trembling effect
+                const borderWidth = getRandomInt(1, 3) + 'px';
+                const transformX = getRandomInt(-1, 1) + 'px';
+                const transformY = getRandomInt(-1, 1) + 'px';
+                const rotate = getRandomInt(-1, 1) + 'deg';
+
+                // Apply the random styles
+                element.style.borderWidth = borderWidth;
+                element.style.transform = `translate(${transformX}, ${transformY}) rotate(${rotate})`;
+
+                // Change the ::before element (this requires adding a dynamic style)
+                element.style.setProperty('--before-border-width', borderWidth);
+                element.style.setProperty('--before-transform', `translate(${transformX}, ${transformY}) rotate(${rotate})`);
+
+                lastTime = timestamp; // Update the last time
+            }
+            
+            // Repeat the animation
+            requestAnimationFrame(tremble);
+        }
+
+        tremble(0); // Start the animation
+    }
+}
+
+// Start the animation when the page loads
+document.addEventListener('DOMContentLoaded', animateTremble);

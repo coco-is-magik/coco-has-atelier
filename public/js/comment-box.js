@@ -13,10 +13,11 @@ function submitComment() {
         mode: 'no-cors' // 'no-cors' mode is required for cross-origin POST requests to Google Forms
     }).then(() => {
         document.getElementById('c_form').reset(); // Clear the form after submission
+        alert("Thank you for your comment! It may take up to 5 minutes to appear!");
         // Delay the loading of comments to ensure Google Sheets has updated
-        setTimeout(() => {
+        /*setTimeout(() => {
             loadComments(); // Reload comments after submission
-        }, 2000); // 2-second delay to allow Google Sheets to update
+        }, 15000); // 15-second delay to allow slow-ass Google Sheets to update*/
     }).catch(error => {
         console.error('Error:', error);
     });
