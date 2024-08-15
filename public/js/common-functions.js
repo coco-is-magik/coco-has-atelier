@@ -40,6 +40,49 @@ document.addEventListener('DOMContentLoaded', function () {
     animateNoise();
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    // Target all elements with class 'box-noise'
+    const noiseCanvases = document.querySelectorAll('.box-noise');
+    
+    noiseCanvases.forEach(canvas => {
+        const ctx = canvas.getContext('2d');
+        const width = canvas.clientWidth;
+        const height = canvas.clientHeight;
+        canvas.width = width;
+        canvas.height = height;
+
+        function generateBoxNoise(density = 0.05) {
+            const imageData = ctx.createImageData(width, height);
+
+            for (let i = 0; i < imageData.data.length; i += 4) {
+                // Use density to control the likelihood of a black dot appearing
+                if (Math.random() < density) {
+                    const blackValue = 0;
+                    const greyAdjust = 100; // Adjust for darker dots if desired
+                    const alpha = Math.random() * 255; // Random opacity for the black dots
+
+                    imageData.data[i] = blackValue + greyAdjust;
+                    imageData.data[i + 1] = blackValue + greyAdjust;
+                    imageData.data[i + 2] = blackValue + greyAdjust;
+                    imageData.data[i + 3] = alpha;
+                } else {
+                    // Leave the pixel fully transparent
+                    imageData.data[i + 3] = 0;
+                }
+            }
+
+            ctx.putImageData(imageData, 0, 0);
+        }
+
+        function animateBoxNoise() {
+            generateBoxNoise(0.05); // Adjust this value (density) to control noise density
+            setTimeout(animateBoxNoise, 1000); // Adjust this value to control the speed of noise changes
+        }
+
+        animateBoxNoise();
+    });
+});
+
 /*
  * Sidebar buttons
  */

@@ -76,6 +76,11 @@ function loadComments() {
                     }
                 }
             });
+
+            // Ensure the scroll happens after DOM updates
+            setTimeout(() => {
+                commentsContainer.scrollTop = commentsContainer.scrollHeight;
+            }, 0);
         })
         .catch(error => console.error('Error fetching data:', error));
 }
