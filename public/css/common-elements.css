@@ -1,14 +1,36 @@
+@font-face {
+    font-family: 'Cloister Black';
+    src: url('../asset/Cloister Black/CloisterBlack.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gothic Ultra OT';
+    src: url('../asset/Gothic Ultra OT/GothicUltra.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gothic Ultra Trendy';
+    src: url('../asset/Gothic Ultra Trendy/GothicUltraTrendy.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Medieval Sharp';
+    src: url('../asset/MedievalSharp/MedievalSharp.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* Reset default margins and padding */
 body, h1, h2, h3, h4, h5, h6, p, div, header, footer, aside, main {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-/* Global Header Centering */
-h1, h2, h3, h4, h5, h6 {
-    text-align: center;
-    padding: 10px 0; /* Optional padding for spacing */
 }
 
 /* Set body styles */
@@ -18,6 +40,18 @@ body {
     background-color: #f8f8f8;
     overflow: hidden;
     position: relative;
+}
+
+/* Global Header Centering */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cloister Black', Arial, sans-serif;
+    text-align: center;
+    padding: 10px 0; /* Optional padding for spacing */
+}
+
+/* Global Text Defaults */
+p ul ol li {
+    font-family: 'Medieval Sharp', Arial, sans-serif;
 }
 
 /* Noise */
@@ -47,12 +81,6 @@ body {
     background-color: black;
 }
 
-.h3-site-news {
-    text-align: left; /* Aligns the text to the left */
-    margin-left: 0; /* Ensures no extra left margin */
-    padding: 2px 0; /* Optional padding for spacing */
-}
-
 /* Main container */
 .container {
     display: flex;
@@ -64,12 +92,13 @@ body {
 /* Title Bar */
 .title-bar {
     width: 50%;
-    padding: 20px;
+    padding: 5px;
     text-align: center;
     color: #f8f8f8;
     border-bottom: 2px solid #f8f8f8;
     margin: 4px auto;
     max-width: 1200px; /* Set a max-width for larger screens */
+    font-size: 26px;
 }
 
 /* Divider */
@@ -145,6 +174,7 @@ body {
     border: 2px solid black;
     transition: transform 0.3s ease;
     z-index: 2;
+    font-family: 'Medieval Sharp', Arial, sans-serif;
 }
 
 .grid-button:hover {
@@ -182,6 +212,7 @@ body {
     align-items: center;
     border-top: 2px solid #f8f8f8;
     margin-top: 10px;
+    font-family: 'Medieval Sharp', Arial, sans-serif;
 }
 
 .footer p {

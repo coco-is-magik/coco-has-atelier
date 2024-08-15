@@ -125,30 +125,35 @@
 
         function handleButtonClick(action) {
             switch(action) {
+                /*
+                * Cool sites
+                */
                 case 'go-to-prodefch':
                     window.open('https://prodefch.net/', '_blank');
                     break;
                 case 'go-to-wapchan':
                     window.open('https://wapchan.org/', '_blank');
                     break;
-                case 'go-to-invid':
-                    window.open('https://docs.invidious.io/instances/', '_blank');
+                /*
+                * Minor Features
+                */
+                case 'toggle-animation':
+                    // Toggle the animation on and off
+                    alert('In progress feature!');
                     break;
                 case 'toggle-music':
                     // Toggle the music on and off
-                    alert('In progress feature!');
-                    break;
-                case 'toggle-anim':
-                    // Toggle the animation on and off
                     alert('In progress feature!');
                     break;
                 case 'toggle-matrix':
                     // Toggle the matrix on and off
                     alert('In progress feature!');
                     break;
-                case 'toggle-gifs':
-                    // Toggle the gifs on and off
-                    alert('In progress feature!');
+                /*
+                * Load other sites
+                */
+                case 'go-to-index':
+                    window.location.href = 'index.html';
                     break;
                 case 'go-to-blog':
                     window.location.href = 'blog.html';
@@ -156,10 +161,10 @@
                 case 'go-to-money':
                     window.location.href = 'financialplanner.html';
                     break;
-                case 'go-to-pokemon':
-                    window.location.href = 'pokemonteambuilder.html';
+                case 'go-to-forum':
+                    window.location.href = 'forum.html';
                     break;
-                case 'go-to-cybernews':
+                case 'go-to-cybersecurity':
                     window.location.href = 'cybersecuritynewsfeed.html';
                     break;
                 default:

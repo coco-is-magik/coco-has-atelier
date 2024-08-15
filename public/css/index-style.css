@@ -27,11 +27,12 @@
     padding: 10px;
     display: none; /* Content is hidden by default */
     background-color: #f8f8f8;
+    font-family: 'Medieval Sharp', Arial, sans-serif;
 }
 
 .collapsible-header h2 {
     margin: 0;
-    font-size: 18px;
+    font-size: 22px;
 }
 
 .collapsible-content ul {
@@ -52,4 +53,10 @@
 
 .collapsible-content li {
     margin-bottom: 5px; /* Space between list items */
+}
+
+.h3-site-news {
+    text-align: left; /* Aligns the text to the left */
+    margin-left: 0; /* Ensures no extra left margin */
+    padding: 2px 0; /* Optional padding for spacing */
 }

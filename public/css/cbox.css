@@ -30,6 +30,8 @@
     font-weight: bold;
     color: #000;
     margin-bottom: 1px;
+    font-size: 22px;
+    font-family: 'Gothic Ultra OT', Arial, sans-serif;
 }
 
 .c-input, .c-textInput {
@@ -37,9 +39,12 @@
     padding: 1px;
     border: 1px solid #000;
     box-sizing: border-box;
-    font-size: 14px;
+    font-size: 28px;
+    font-family: 'Gothic Ultra Trendy', Arial, sans-serif;
     color: #000;
     background-color: #fff;
+    overflow-y: auto;
+    max-height: 75px;
 }
 
 .c-input:focus, .c-textInput:focus {
@@ -81,10 +86,11 @@
     padding: 5px 10px;
     background-color: #000;
     color: white;
-    font-size: 14px;
+    font-size: 22px;
     font-weight: bold;
     border: 1px solid #000;
     cursor: pointer;
+    font-family: 'Gothic Ultra OT', Arial, sans-serif;
 }
 
 #c_submitButton:hover {
@@ -123,25 +129,28 @@
 
 .c-comment p {
     margin: 0;
-    font-size: 14px;
+    font-size: 26px;
+    font-family: 'Gothic Ultra Trendy', Arial, sans-serif;
     color: #000;
     z-index: 9999;
 }
 
 .c-comment h6 {
     margin: 0;
-    font-size: 13px;
+    font-size: 18px;
+    font-family: 'Gothic Ultra OT', Arial, sans-serif;
     color: #000;
     text-align: left;
     margin: 0; /* Reset margins if needed */
-    padding: 2px 0; /* Optional padding for spacing */
+    padding: 1px 0; /* Optional padding for spacing */
     z-index: 9999;
 }
 
 .c-timestamp {
-    font-size: 10px;
+    font-size: 16px;
+    font-family: 'Gothic Ultra OT', Arial, sans-serif;
     color: #555;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
     display: block;
     z-index: 9999;
 }
