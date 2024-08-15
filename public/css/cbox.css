@@ -23,6 +23,7 @@
     display: flex;
     flex-direction: column;
     width: 49%;
+    z-index: 9999;
 }
 
 .c-label {
@@ -56,6 +57,7 @@
 
 .c-messageInput {
     width: 70%; /* Adjust this width as needed */
+    z-index: 9999;
 }
 
 .c-textInput {

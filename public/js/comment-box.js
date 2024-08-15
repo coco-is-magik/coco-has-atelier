@@ -85,8 +85,11 @@ function loadComments() {
         .catch(error => console.error('Error fetching data:', error));
 }
 
-// Poll for new comments every 30 seconds
-setInterval(loadComments, 30000);
-
 // Call the function to load comments when the page loads
 window.onload = loadComments;
+
+// Make sure that we only have one interval
+clearInterval(loadComments);
+
+// Poll for new comments every 30 seconds
+setInterval(loadComments, 30000);
