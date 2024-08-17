@@ -31,6 +31,7 @@ function checkTimestampExists(timestamp) {
 
 function loadComments() {
     const commentsContainer = document.getElementById('c_commentsContainer');
+    const inputDiv = document.getElementById('c_inputDiv');
     const url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vT0gUZFJh24Gte4NbJssGTdUC26JHJ-ysdLWbLNrcBoZYnmjXx2Puh1UmDLxmuAEO8u7YXCrAZkWA39/pubhtml';
     const cacheBuster = new Date().getTime();
     const fetchUrl = `${url}?nocache=${cacheBuster}`;
@@ -74,7 +75,12 @@ function loadComments() {
                 commentsContainer.scrollTop = commentsContainer.scrollHeight;
             }, 0);
         })
-        .catch(error => console.error('Error fetching data:', error));
+        .catch(error => {
+            console.error('Error fetching data:', error);
+            // Replace the comment container with alt text
+            commentsContainer.innerHTML = '<p>Commentary is not retrievable at this time...</p>';
+            inputDiv.innerHTML = '<h2>Mana Disturbences Prevent Correspondence</h2>'
+        });
 }
 
 // Call the function to load comments when the page loads
