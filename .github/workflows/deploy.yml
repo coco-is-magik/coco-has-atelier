@@ -1,0 +1,34 @@
+name: Deploy to Nekoweb
+
+on:
+  push:
+    branches:
+      - main
+
+concurrency: # prevent concurrent deploys doing strange things
+  group: deploy-to-nekoweb
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Prepare build
+        run: |
+          mkdir -p ./build
+          cp -r ./public/* ./build
+
+      - name: Deploy to Nekoweb
+        uses: mp-pinheiro/nekoweb-deploy@main
+        with:
+          API_KEY: ${{ secrets.NEKOWEB_API_KEY }}
+          BUILD_DIR: './build'
+          DEPLOY_DIR: '/'
+          CLEANUP: 'True'
+          DELAY: '0.5'
+          NEKOWEB_PAGENAME: 'coco-has-atelier'
+          ENCRYPTION_KEY: ${{ secrets.NEKOWEB_ENCRYPTION_KEY }}
