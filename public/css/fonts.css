@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Cloister Black';
+    src: url('../asset/Cloister Black/CloisterBlack.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gothic Ultra OT';
+    src: url('../asset/Gothic Ultra OT/GothicUltra.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gothic Ultra Trendy';
+    src: url('../asset/Gothic Ultra Trendy/GothicUltraTrendy.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Medieval Sharp';
+    src: url('../asset/MedievalSharp/MedievalSharp.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

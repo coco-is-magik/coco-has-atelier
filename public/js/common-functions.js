@@ -156,16 +156,24 @@
                     window.location.href = 'index.html';
                     break;
                 case 'go-to-blog':
-                    window.location.href = 'blog.html';
+                    //window.location.href = 'blog.html';
+                    window.location.href = 'underconstruction.html';
                     break;
                 case 'go-to-money':
-                    window.location.href = 'financialplanner.html';
+                    //window.location.href = 'financialplanner.html';
+                    window.location.href = 'underconstruction.html';
                     break;
                 case 'go-to-forum':
-                    window.location.href = 'forum.html';
+                    //window.location.href = 'forum.html';
+                    window.location.href = 'underconstruction.html';
                     break;
                 case 'go-to-cybersecurity':
-                    window.location.href = 'cybersecuritynewsfeed.html';
+                    //window.location.href = 'cybersecuritynewsfeed.html';
+                    window.location.href = 'underconstruction.html';
+                    break;
+                case 'go-to-applanding':
+                    //window.location.href = 'applanding.html';
+                    window.location.href = 'underconstruction.html';
                     break;
                 default:
                     console.log('Unknown action:', action);
