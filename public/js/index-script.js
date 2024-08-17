@@ -46,5 +46,5 @@
         });
     }
 
-    listenerTracker.addListener(window, 'DOMContentLoaded', setupCollapsibleHeaders);
+    listenerTracker.addListener(document, 'DOMContentLoaded', setupCollapsibleHeaders);
 })();
