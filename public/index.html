@@ -197,7 +197,7 @@
                                     <input class="c-input c-websiteInput" name="entryWebsite" id="entryWebsite" type="url">
                                 </div>
                             </div>
-                        
+                
                             <div id="c_messageSubmitWrapper" class="c-inputWrapper">
                                 <div id="c_messageWrapper">
                                     <label class="c-label c-textLabel" for="entryMessage">Message*</label>
@@ -210,6 +210,14 @@
                                 </div>
                             </div>
                         </form>
+                
+                        <!-- Hidden form for submission -->
+                        <form id="hiddenForm" action="https://docs.google.com/forms/d/e/1FAIpQLSfUznmmxVUaUa89AEXHDXCLMohL-T3RFDJE2aKuSwxaiJ9aMQ/formResponse" method="POST" target="hiddenIframe">
+                            <input type="hidden" name="entry.720654468" id="hiddenEntryName">
+                            <input type="hidden" name="entry.1934187383" id="hiddenEntryWebsite">
+                            <input type="hidden" name="entry.1874852356" id="hiddenEntryMessage">
+                        </form>
+                        <iframe name="hiddenIframe" style="display:none;"></iframe>
                     </div>
                     <div id="c_commentsDiv">
                         <div id="c_commentsContainer"></div>

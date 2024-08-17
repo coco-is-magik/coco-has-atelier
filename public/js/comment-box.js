@@ -2,25 +2,17 @@
  * Comment Box
  */
 function submitComment() {
-    const formData = new FormData();
-    formData.append('entry.720654468', document.getElementById('entryName').value); // Name
-    formData.append('entry.1934187383', document.getElementById('entryWebsite').value); // Website
-    formData.append('entry.1874852356', document.getElementById('entryMessage').value); // Message
+    // Populate the hidden form with the input values
+    document.getElementById('hiddenEntryName').value = document.getElementById('entryName').value;
+    document.getElementById('hiddenEntryWebsite').value = document.getElementById('entryWebsite').value;
+    document.getElementById('hiddenEntryMessage').value = document.getElementById('entryMessage').value;
 
-    fetch('https://docs.google.com/forms/d/e/1FAIpQLSfUznmmxVUaUa89AEXHDXCLMohL-T3RFDJE2aKuSwxaiJ9aMQ/formResponse', {
-        method: 'POST',
-        body: formData,
-        mode: 'no-cors' // 'no-cors' mode is required for cross-origin POST requests to Google Forms
-    }).then(() => {
-        document.getElementById('c_form').reset(); // Clear the form after submission
-        alert("Thank you for your comment! It may take up to 5 minutes to appear!");
-        // Delay the loading of comments to ensure Google Sheets has updated
-        /*setTimeout(() => {
-            loadComments(); // Reload comments after submission
-        }, 15000); // 15-second delay to allow slow-ass Google Sheets to update*/
-    }).catch(error => {
-        console.error('Error:', error);
-    });
+    // Submit the hidden form
+    document.getElementById('hiddenForm').submit();
+
+    // Clear the original form after submission
+    document.getElementById('c_form').reset(); 
+    alert("Thank you for your comment! It may take up to 5 minutes to appear!");
 }
 
 function checkTimestampExists(timestamp) {
