@@ -91,5 +91,5 @@ window.onload = loadComments;
 // Make sure that we only have one interval
 clearInterval(loadComments);
 
-// Poll for new comments every 30 seconds
-setInterval(loadComments, 30000);
+// Poll for new comments every 5 minutes, the cache timer
+setInterval(loadComments, (60000) * 5);

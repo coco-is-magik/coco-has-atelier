@@ -7,7 +7,7 @@ body, h1, h2, h3, h4, h5, h6, p, div, header, footer, aside, main {
 
 /* Set body styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Medieval Sharp', Arial, sans-serif;
     height: 100vh;
     background-color: #f8f8f8;
     overflow: hidden;
@@ -19,11 +19,6 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Cloister Black', Arial, sans-serif;
     text-align: center;
     padding: 10px 0; /* Optional padding for spacing */
-}
-
-/* Global Text Defaults */
-p ul ol li {
-    font-family: 'Medieval Sharp', Arial, sans-serif;
 }
 
 /* Noise */
@@ -88,9 +83,14 @@ body {
 .content {
     width: 60%;
     overflow-y: auto;
+    overflow-x: hidden;
     background-color: #f8f8f8;
     border: 2px solid black;
     padding: 10px;
+    border: 5px double transparent; /* Inner border */
+    border-image: linear-gradient(30deg, #d4af37, #f7d794, #d4af37); /* Gradient for outer border */
+    box-sizing: border-box; /* Ensure padding and borders are included in width/height */
+    border-image-slice: 1;
 }
 
 .mainbox {
