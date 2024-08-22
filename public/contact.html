@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coco Has Atelier</title>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/common-elements.css">
+    <link rel="stylesheet" href="css/cbox.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <!-- Noise -->
+    <canvas class="noise"></canvas>
+
+    <!-- Title Bar -->
+    <header class ="title-bar">
+        <h1>Coco's Atelier</h1>
+    </header>
+
+    <!-- Main Layout -->
+    <div class="container">
+        <!-- Left Sidebar -->
+        <aside class="sidebar left">
+            <div class="box shake">
+                <canvas class="box-noise"></canvas>
+                <h2>The Atelier's Many Rooms</h2>
+                <div class="button-grid">
+                    <a href="javascript:void(0);" class="grid-button" data-action="go-to-index">Atelier's Hearth & Such</a>
+                    <a href="javascript:void(0);" class="grid-button" data-action="go-to-blog">Wet Sock Esoterica</a>
+                    <a href="javascript:void(0);" class="grid-button" data-action="go-to-applanding">Incantations of Mirth</a>
+                    <a href="javascript:void(0);" class="grid-button" data-action="go-to-forum">Pseudononymous Correspondence</a>
+                    <a href="javascript:void(0);" class="grid-button" data-action="go-to-money">Stewardship Automata</a>
+                    <a href="javascript:void(0);" class="grid-button" data-action="go-to-cybersecurity">Metamagical Tidings</a>
+                </div>
+            </div>
+            <div class="box shake">
+                <canvas class="box-noise"></canvas>
+                <h2>Minor Spells and Wizardry</h2>
+                <div class="button-grid">
+                    <a href="javascript:void(0);" class="grid-button" data-action="toggle-music">Summon Bard</a>
+                    <a href="javascript:void(0);" class="grid-button" data-action="toggle-animation">Dispel Motion</a>
+                    <a href="javascript:void(0);" class="grid-button" data-action="toggle-matrix">Coco's Runefall</a>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content">
+            <div class="mainbox">
+                <!-- Welcome Message -->
+                <h2>Contact Coco!</h2>
+                <p>
+                    You can contact me via email at <a href="mailto:coco_is_magik@disroot.org">coco_is_magik@disroot.org</a> or you can leave a comment
+                    in the box at the bottom right of the page! When sending me email communications, please encrypt using gpg or send me your public key
+                    so that we can keep our coresspondence private. I will not respond to emails that are unencrypted with anything besides my public key,
+                    and I'll be pretty grumpy about it!
+                </p>
+
+                <hr class="divider">
+
+                <div class="pgppubkey">
+                    <!-- PGP pubkey Block -->
+                    <p>
+                        -----BEGIN PGP PUBLIC KEY BLOCK-----<br><br>
+
+                        mQINBGbGlr0BEAC3TeAAx6g/VeWfcplhnn5x+XyKvXqfKWFcc1iOO1x6WLLbJm7J<br>
+                        OdFOVVGbU7s/lAs4NgkwrJIL9rt0LTteQDm1UU3+d7jkeWuj7QN0DN4zUj5i3znN<br>
+                        Kb4BQuE1btyyxHt7LhAvAvPZmXNB790jS+Q0NOqUVD55fJNvAaksXYsD3PlaILv9<br>
+                        XMQ6Nf1+TF+XZU/hWENhzjsAfXp2ptdJ2x8CcAWrXCGDE/FEt+lgdTrTrPoxoCNR<br>
+                        SgG/crZv4nSWuscd3G95IPcV1kQqmnvao3cEuCyF8EWL/QsAKUKmjpYUzQwh9SXb<br>
+                        az5Cr1SLFeG5/1FrfLsMwr4ENOrJ23EcjPvaMpkOOxVHF/tPHNnwHnkoyD3egGj9<br>
+                        1aC5hweivBaWWL5uNyoPQOyyPj4RiB01DIZeIaqipeRScZcxGZ1i7VTt2AquZRVl<br>
+                        Mp5+S3oBu9scHB1JirnItX2UHbXoaMWEnO8wopP8uItXfnaoVnuSV8HHhCG6YPFt<br>
+                        6SnEVr/M4fpGV14sPBIq9CkH/GdrEofrjsBcd/nLvH4WIYP+5Xnd3s2g2WGXdRXn<br>
+                        lkfxF28Bv+hu02kgALaKzfnaQSEW+AXAd9hvNfXDav61IahImUT9JquUs0twKdhU<br>
+                        rXge6KzZOkctNWm3Z4vt/F8FdvlBidjKmOzW5xNAzKItDKXMr59G9+UstwARAQAB<br>
+                        tF1jb2NvLWlzLW1hZ2lrICh0aGUgd29ybGQgaXMgZnVsbCBvZiBtYWdpYywgeW91<br>
+                        IGp1c3QgaGF2ZSB0byBsb29rKSA8Y29jb19pc19tYWdpa0BkaXNyb290Lm9yZz6J<br>
+                        AlEEEwEIADsWIQRHsgkZ9SrPkTyzemJdA9HcDNSRrgUCZsaWvQIbAwULCQgHAgIi<br>
+                        AgYVCgkICwIEFgIDAQIeBwIXgAAKCRBdA9HcDNSRrgugD/9ab7tKUpJBHIp7nxwJ<br>
+                        x0Dz31h1g8akPTUG0NN9f6a/PbVZUR8HTQLEQ63O+VyNPBWuZU2fyWtCPGPcn4Mk<br>
+                        std78D6imY1/pwVxAbWlG0CD3zJPyQmolz/whJoQ788tfu1ZWIDvLKJbY4q2ysex<br>
+                        5ni/codhYVNjK/BWGxiIZrsOvxgvBYkriBAL/5YYm/3uv4SZmDWLm3PpOdf9d8vQ<br>
+                        yezo/HrWAXstDv6/0N/WN+kmSPm79b7SZYg+ilXE1fmqzfE+qawxD9gCAkvbjA2k<br>
+                        JoWaJRVOnuUDjOI1jceBvD8PQZbb8/wMH5Gz6Ex/eiKYlT2s74H99qDT6l1QcBMt<br>
+                        2vwrjJ5lRKQhhsl/x4zaHy6JoGnOe2W/eYL8WNGngjiLw0QhGkzEKbYFkXUlLTUW<br>
+                        BKxaNTVHWOOdl0boptmrz37OhsERTsRnpXYgCqxIRyArTpf+Jo6BfQxynGFWuDCN<br>
+                        +rWN2Pq9cHWjSosCM9Gqn80vrc72B7DfKjDfJf/kEN1nt3CEhZuKCW42eEY4M0AF<br>
+                        d7sGKtTXd+I3EHC/muvOsN3vRZvnqzcW8tRH2iolqtnn86b0D0EHfN0hKUurjQ0J<br>
+                        zh+E2OmvzL4YgtxrWgVSdzz4FXAmIhBJm5Ht9Kmmuf0ZOVEmOP2ZJUo0EBrL3IsF<br>
+                        4E4Wkp4Qmyc0SAElctKSGaOEhrkCDQRmxpa9ARAA1Xgr4appGG4z6xQw0QZmMEcH<br>
+                        mBwNvZqOtEvJ4nZyLNHrBDVvruQ/N/O13v2ujSkyTojqPZK0tjzPS+88N8QBWQT4<br>
+                        qtadBskragK+XxPHMCoO09DakkABwQQqCwqSZWpbFidm2xfptEqOYbb9g0w39D1O<br>
+                        /p0X6deCWJUKRYpvwcTKHmcmRu1VFIwu/poHjzeeAY+4dnnltqh6e7XdnkFhi9g+<br>
+                        KwHKPF6ZCzE51d70pb+MGw/VoR7t1LSGGlZ0A8r7a1P4BqyyTECiRv9mEhpp+Mwi<br>
+                        YmEnf5wTP6TPXclaZvrGRbBzz94F1PzDDcsHUlVIU0kJkj9moTLwExlun99+X2vy<br>
+                        BNHPmU/zCFJcmOTh7eLqgmipCQnvjcRXkHWXSTasf8Ji/pJ8SbAJzdtVr9W8G6eH<br>
+                        vRObOtMdrCWQtp1KPatEKnTodFY8eSshVD9MyM5nUlbnOuCNkJqynj1iO+0hesIH<br>
+                        Q7Snyk+AczBqm6L0nGI5ZnuYg34rQ5TajrjkT7b54z5Qz1YDXraspPC6aujf1eWG<br>
+                        VShTEaiRBd5eCoYO/Gs75WRy9+Yhqm8sOo2OHbMS6pSw/r6mW4vrIlG1UTVoJPZH<br>
+                        ngcNsQrPRrzN27tEPBNP8XOU7mhRWgMxnOMfxcv/rmT9Q/VZh6Nm0PazukZequgu<br>
+                        py3F8mkNxpcwRruUv1MAEQEAAYkCNgQYAQgAIBYhBEeyCRn1Ks+RPLN6Yl0D0dwM<br>
+                        1JGuBQJmxpa9AhsMAAoJEF0D0dwM1JGukFkP/jZrgEhXaRGg0lyQdBKNkM/g736b<br>
+                        L3WFvWhn8MgI0S2e9IDGZHH8yEjcVlrBULujmUgP+Sp1Sj1TdzzoZcPQa69KtJjQ<br>
+                        kqc43OKH2VcryfwYAdz0R6ufVAiUHf22n6golvDC4Yfb1T9XRLeICpq8/Df6pyol<br>
+                        oi2mb9evgi/JQNfp+v5DOfN0tivF5GMToQoNGFnmVDkukNjIJeOIWobU2uzBgR+f<br>
+                        3kqFco8+jwj2Z33Rk4nH1cw9W97H+JHvkH66DFXg0HeUgCoBfl1MUPIEzlBlQbEu<br>
+                        M8vbPWKjsFZHd/2mNwF024ESk7FosoJR9q4TU8SyAA9elPouuU1dDQkhH8SEV2XC<br>
+                        E29z/MIT2imdmwSiI7gQ5X6OLCw6QzcUJkd+hD7z08qmQI/AdaK/gf5eYma6dj81<br>
+                        8O00s8RbnFeiewYUWUzniSSTYR4zSd2XHpSbmGPn79fZPuI/Y0GDDT+gidKtljMF<br>
+                        JKdjsx0xMY4kxS4iBg4JGxrDBpwr2LoIYxfhZu4H7LxzAjqvyWhdoGhi0gM0K+pW<br>
+                        aGb+SfOXE81o12pliU5yUeAhBW3syVpDFq0m0r06xUD2LqiTE9183roPSqCAGGvW<br>
+                        Dfp01umEsUd4lhSzvqG3KQEAAesvKolWlg0tsp833R9FtSfGkW7hO549E6vfbjaE<br>
+                        rKGuYTiRoUKKKyxs<br>
+                        =8RGx<br>
+                        -----END PGP PUBLIC KEY BLOCK-----
+                    </p>
+                </div>
+            </div>
+        </main>
+
+        <!-- Right Sidebar -->
+        <aside class="sidebar right">
+            <div class="box shake">
+                <canvas class="box-noise"></canvas>
+                <h2>Realms Worth Travelling To</h2>
+                <div class="button-grid">
+                    <a href="javascript:void(0);" class="grid-button" data-action="go-to-prodefch">ProDefCh</a>
+                    <a href="javascript:void(0);" class="grid-button" data-action="go-to-wapchan">Wapchan</a>
+                </div>
+            </div>
+            <div class="box shake">
+                <canvas class="box-noise"></canvas>
+                <div id="c_widget">
+                    <div id="c_inputDiv">
+                        <form id="c_form" onsubmit="submitComment(); return false;">
+                            <div id="c_nameWebsiteWrapper" class="c-inputWrapper">
+                                <div class="c-labelInputPair">
+                                    <label class="c-label c-nameLabel" for="entryName">Name*</label>
+                                    <input class="c-input c-nameInput" name="entryName" id="entryName" type="text" maxlength="24" required>
+                                </div>
+                                <div class="c-labelInputPair">
+                                    <label class="c-label c-websiteLabel" for="entryWebsite">Website</label>
+                                    <input class="c-input c-websiteInput" name="entryWebsite" id="entryWebsite" type="url">
+                                </div>
+                            </div>
+                
+                            <div id="c_messageSubmitWrapper" class="c-inputWrapper">
+                                <div id="c_messageWrapper">
+                                    <label class="c-label c-textLabel" for="entryMessage">Message*</label>
+                                    <div id="c_submitWrapper">
+                                        <input id="c_submitButton" name="c_submitButton" type="submit" value="Submit">
+                                    </div>
+                                </div>
+                                <div class="c-messageInput">
+                                    <textarea class="c-input c-textInput" name="entryMessage" id="entryMessage" rows="4" maxlength="500" required></textarea>
+                                </div>
+                            </div>
+                        </form>
+                
+                        <!-- Hidden form for submission -->
+                        <form id="hiddenForm" action="https://docs.google.com/forms/d/e/1FAIpQLSfUznmmxVUaUa89AEXHDXCLMohL-T3RFDJE2aKuSwxaiJ9aMQ/formResponse" method="POST" target="hiddenIframe">
+                            <input type="hidden" name="entry.720654468" id="hiddenEntryName">
+                            <input type="hidden" name="entry.1934187383" id="hiddenEntryWebsite">
+                            <input type="hidden" name="entry.1874852356" id="hiddenEntryMessage">
+                        </form>
+                        <iframe name="hiddenIframe" style="display:none;"></iframe>
+                    </div>
+
+                    <iframe id="commentsIframe" style="display:none;"></iframe>
+                    <div id="c_commentsDiv">
+                        <div id="c_commentsContainer"></div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="contact.html" target="_blank">Contact</a>
+        <span class="footer-separator">•</span>
+        <a href="https://github.com/coco-is-magik/coco-has-atelier" target="_blank">GitHub Repository</a>
+        <span class="footer-separator">•</span>
+        <a href="https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">
+            CC BY-SA 4.0
+            <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="">
+            <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt="">
+            <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt="">
+        </a>
+    </footer>
+
+    <!-- Load scripts -->
+    <script src="js/common-functions.js"></script>
+    <script src="js/comment-box.js"></script>
+</body>
+</html>

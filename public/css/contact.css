@@ -1,0 +1,4 @@
+.pgppubkey {
+    margin: 0 auto; /* Centers the div horizontally within its container */
+    width: fit-content; /* Adjusts the width to fit the content inside */
+}
