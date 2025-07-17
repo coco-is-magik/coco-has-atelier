@@ -150,20 +150,19 @@
                     alert('In progress feature!');
                     break;
                 /*
-                * Load other sites
+                * Load other main pages
                 */
                 case 'go-to-index':
                     window.location.href = 'index.html';
                     break;
                 case 'go-to-blog':
-                    //window.location.href = 'blog.html';
-                    window.location.href = 'underconstruction.html';
+                    window.location.href = 'wet-sock-esoterica.html';
                     break;
                 case 'go-to-money':
                     //window.location.href = 'financialplanner.html';
                     window.location.href = 'underconstruction.html';
                     break;
-                case 'go-to-forum':
+                case 'go-to-tabletop':
                     //window.location.href = 'forum.html';
                     window.location.href = 'underconstruction.html';
                     break;
@@ -174,6 +173,24 @@
                 case 'go-to-applanding':
                     //window.location.href = 'applanding.html';
                     window.location.href = 'underconstruction.html';
+                    break;
+                /*
+                * Article pages
+                */
+                case 'world-wars-as-origin-myth':
+                    window.location.href = 'world-wars-as-origin-myth.html';
+                    break;
+                case 'punic-and-world-wars-dissonance':
+                    window.location.href = 'punic-and-world-wars-dissonance.html';
+                    break;
+                case 'past-metaphysical-hyperviolence':
+                    window.location.href = 'past-metaphysical-hyperviolence.html';
+                    break;
+                case 'polymorphism-basics':
+                    window.location.href = 'polymorphism-basics.html';
+                    break;
+                case 'making-this-website':
+                    window.location.href = 'making-this-website.html';
                     break;
                 default:
                     console.log('Unknown action:', action);

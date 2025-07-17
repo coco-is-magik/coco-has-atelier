@@ -136,6 +136,13 @@ body {
     width: 100%;
 }
 
+.button-grid-main-content {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    width: 100%;
+}
+
 .grid-button {
     display: block;
     text-align: center;
